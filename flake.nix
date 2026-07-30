@@ -12,8 +12,9 @@
         pkgs:
         pkgs.telegram-desktop.unwrapped.overrideAttrs (orig: {
           patches = (orig.patches or [ ]) ++ [
-            ./hide-premium.patch
-            ./never-show-promo-suggestions.patch
+            ./patches/hide-premium.patch
+            ./patches/never-show-promo-suggestions.patch
+            ./patches/hide-ai-button.patch
           ];
         });
       packages.x86_64-linux.telegram-desktop =
