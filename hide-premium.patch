@@ -1,0 +1,25 @@
+From 2c00f1104399c64e6749a0743217a9a4f239da94 Mon Sep 17 00:00:00 2001
+From: Leonardo Taglialegne <leonardo@taglialegne.it>
+Date: Thu, 30 Jul 2026 15:02:20 +0200
+Subject: [PATCH] Disable premium nags
+
+---
+ Telegram/SourceFiles/main/main_session.cpp | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/Telegram/SourceFiles/main/main_session.cpp b/Telegram/SourceFiles/main/main_session.cpp
+index cedcddfd13..4e9b945edf 100644
+--- a/Telegram/SourceFiles/main/main_session.cpp
++++ b/Telegram/SourceFiles/main/main_session.cpp
+@@ -278,6 +278,8 @@ void Session::appConfigRefreshed() {
+ 		u"premium_purchase_blocked"_q,
+ 		true);
+ #endif // OS_MAC_STORE
++
++	_premiumPossible = false;
+ }
+ 
+ void Session::setTmpPassword(const QByteArray &password, TimeId validUntil) {
+-- 
+2.54.0
+

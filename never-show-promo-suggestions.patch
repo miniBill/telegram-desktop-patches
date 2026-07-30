@@ -1,0 +1,24 @@
+From b45746363a3d3987b504f959938ec20a0c03a664 Mon Sep 17 00:00:00 2001
+From: Leonardo Taglialegne <leonardo@taglialegne.it>
+Date: Thu, 30 Jul 2026 17:20:31 +0200
+Subject: [PATCH] Never show promo suggestions
+
+---
+ Telegram/SourceFiles/data/components/promo_suggestions.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Telegram/SourceFiles/data/components/promo_suggestions.cpp b/Telegram/SourceFiles/data/components/promo_suggestions.cpp
+index 15d468c155..e953b403a2 100644
+--- a/Telegram/SourceFiles/data/components/promo_suggestions.cpp
++++ b/Telegram/SourceFiles/data/components/promo_suggestions.cpp
+@@ -215,6 +215,7 @@ void PromoSuggestions::setTopPromoted(
+ }
+ 
+ bool PromoSuggestions::current(const QString &key) const {
++	return false;
+ 	if (key == u"BIRTHDAY_CONTACTS_TODAY"_q) {
+ 		if (_dismissedSuggestions.contains(key)) {
+ 			return false;
+-- 
+2.54.0
+
