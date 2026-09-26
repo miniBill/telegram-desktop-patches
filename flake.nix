@@ -24,9 +24,9 @@
         let
           telegram-desktop-unwrapped = pkgs.telegram-desktop.unwrapped.overrideAttrs (orig: {
             patches = (orig.patches or [ ]) ++ [
-              ./patches/hide-premium.patch
-              ./patches/never-show-promo-suggestions.patch
-              ./patches/hide-ai-button.patch
+              ./patches/0001-Disable-premium-nags.patch
+              ./patches/0002-Never-show-promo-suggestions.patch
+              ./patches/0003-Hide-AI-button.patch
             ];
           });
         in

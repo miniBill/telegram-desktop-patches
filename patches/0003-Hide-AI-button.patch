@@ -1,14 +1,14 @@
-From fa3f3470259f271117862519a82024f10c96b1fb Mon Sep 17 00:00:00 2001
+From 963132765ae2a8a6cbee4d2398c36d359b3102d8 Mon Sep 17 00:00:00 2001
 From: Leonardo Taglialegne <leonardo@taglialegne.it>
 Date: Thu, 30 Jul 2026 17:32:48 +0200
-Subject: [PATCH] Hide AI button
+Subject: [PATCH 3/3] Hide AI button
 
 ---
  Telegram/SourceFiles/ui/controls/compose_ai_button_factory.cpp | 1 +
  1 file changed, 1 insertion(+)
 
 diff --git a/Telegram/SourceFiles/ui/controls/compose_ai_button_factory.cpp b/Telegram/SourceFiles/ui/controls/compose_ai_button_factory.cpp
-index ba6456db8e..69edd56915 100644
+index a4051002f0..b6798f2b5f 100644
 --- a/Telegram/SourceFiles/ui/controls/compose_ai_button_factory.cpp
 +++ b/Telegram/SourceFiles/ui/controls/compose_ai_button_factory.cpp
 @@ -36,6 +36,7 @@ base::options::toggle HideAiButtonOption({

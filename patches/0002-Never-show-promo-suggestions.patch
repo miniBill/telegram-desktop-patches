@@ -1,17 +1,17 @@
-From b45746363a3d3987b504f959938ec20a0c03a664 Mon Sep 17 00:00:00 2001
+From 5f5d6b889fa03f76d8dfcc2e9b426f71d955df82 Mon Sep 17 00:00:00 2001
 From: Leonardo Taglialegne <leonardo@taglialegne.it>
 Date: Thu, 30 Jul 2026 17:20:31 +0200
-Subject: [PATCH] Never show promo suggestions
+Subject: [PATCH 2/3] Never show promo suggestions
 
 ---
  Telegram/SourceFiles/data/components/promo_suggestions.cpp | 1 +
  1 file changed, 1 insertion(+)
 
 diff --git a/Telegram/SourceFiles/data/components/promo_suggestions.cpp b/Telegram/SourceFiles/data/components/promo_suggestions.cpp
-index 15d468c155..e953b403a2 100644
+index 468afa77db..76e2371a2b 100644
 --- a/Telegram/SourceFiles/data/components/promo_suggestions.cpp
 +++ b/Telegram/SourceFiles/data/components/promo_suggestions.cpp
-@@ -215,6 +215,7 @@ void PromoSuggestions::setTopPromoted(
+@@ -221,6 +221,7 @@ void PromoSuggestions::setTopPromoted(
  }
  
  bool PromoSuggestions::current(const QString &key) const {
